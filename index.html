@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            // Hide and Show
+            $('.hideshow').click(function () {
+                if ($(this).val() == "hide") {
+                    $('.textHS p').hide();
+                } else {
+                    $('.textHS p').show();
+                }
+            });
+
+            // Toggle
+            $('.toggle').click(function () {
+                if ($(this).val() == "toggle") {
+                    $('.textToggle p').toggle();
+                } else {
+                    $('.textToggle p').slideToggle();
+                }
+            });
+
+            // Slide Up or Down
+            $('.slide').click(function () {
+                if ($(this).val() == "slideDown") {
+                    $('.textSlide p').slideDown();
+                } else {
+                    $('.textSlide p').slideUp();
+                }
+            });
+
+            // Fade In or Out
+            $('.fade').click(function () {
+                if ($(this).val() == "fadeIn") {
+                    $('.textFade p').fadeIn();
+                } else {
+                    $('.textFade p').fadeOut();
+                }
+            });
+
+            // Add Class
+            $('.addClass').click(function () {
+                $('.textAdd p').addClass("red");
+            });
+
+            // Before and After
+            $('.beforeafter').click(function () {
+                if ($(this).val() == "before") {
+                    $('.textBeforeAfter p').before("before");
+                } else {
+                    $('.textBeforeAfter p').after("after");
+                }
+            });
+
+            // Append or Preppend
+            $('.append').click(function () {
+                if ($(this).val() == "append") {
+                    $('.textAppend p').append("append");
+                } else {
+                    $('.textAppend p').prepend("prepend");
+                }
+            });
+
+            //Html or Text
+            $('.html').click(function () {
+                if ($(this).val() == "html") {
+                    $('.textHtml p,h3').html("<h3>Click the Button to set this paragraph to h3 or alert it text</h3>");
+                } else {
+                    alert($('.textHtml p,h3').text());
+                }
+            });
+
+            // Attr
+            $('.attr').click(function () {  
+                $(document).attr("title", "New Title");
+            });
+        });
+    </script>
+    <link rel="stylesheet" href="styles.css">
+    <title>funciones jquery</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="buttons">
+            <button class="hideshow" value="hide">Hide</button>
+            <button class="hideshow" value="show">Show</button>
+        </div>
+        <div class="textHS">
+            <h1>Hide / Show</h1>
+            <p>Click the Button to hide or show this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="toggle" value="toggle">Toggle</button>
+            <button class="toggle" value="toggleSlide">Slide Toggle</button>
+        </div>
+        <div class="textToggle">
+            <h1>Toggle</h1>
+            <p>Click the Button to toggle this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="slide" value="slideUp">Slide Up (Hide)</button>
+            <button class="slide" value="slideDown">Slide Down (Display)</button>
+        </div>
+        <div class="textSlide">
+            <h1>Slide Up/Down</h1>
+            <p>Click the Button to slide up or down this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="fade" value="fadeOut">Fade In</button>
+            <button class="fade" value="fadeIn">Fade Out</button>
+        </div>
+        <div class="textFade">
+            <h1>Fade In/out</h1>
+            <p>Click the Button to hide in or out this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="addClass" value="add">Add Class</button>
+        </div>
+        <div class="textAdd">
+            <h1>AddClass</h1>
+            <p>Click the Button to add the class 'red' to this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="beforeafter" value="before">Before</button>
+            <button class="beforeafter" value="after">After</button>
+        </div>
+        <div class="textBeforeAfter">
+            <h1>Before/After</h1>
+            <p>Click the Button to add text before or after this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="append" value="prepend">Prepend</button>
+            <button class="append" value="append">Append</button>
+        </div>
+        <div class="textAppend">
+            <h1>Append/Prepend</h1>
+            <p>Click the Button to prepend or append to this paragraph</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="html" value="html">Html</button>
+            <button class="html" value="text">Text</button>
+        </div>
+        <div class="textHtml">
+            <h1>Html and Text</h1>
+            <p>Click the Button to set this paragraph to h3 or alert it text</p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="buttons">
+            <button class="attr" value="add">Attr</button>
+        </div>
+        <div class="textAttr">
+            <h1>Attr</h1>
+            <p>Click the Button to change tittle attribute from this document</p>
+        </div>
+    </div>
+</body>
+
+</html>

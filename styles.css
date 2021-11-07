@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.red {
+    background: red;
+}
+
+.container {
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 2px solid black;
+    align-items: center;
+}
+
+.buttons {
+    width: 10%;
+    display: block;
+}
+
+.buttons button {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.textHS {
+    width: 90%;
+    margin-left: 40px;
+
+}
+
+.textToggle {
+    width: 90%;
+    margin-left: 40px;
+}
+
+.textSlide {
+    width: 90%;
+    margin-left: 40px;
+}
+
+.textFade {
+    width: 90%;
+    margin-left: 40px;
+}
+
+.textAdd {
+    width: 90%;
+    margin-left: 40px;
+}
+
+.textBeforeAfter {
+    width: 90%;
+    margin-left: 40px; 
+}
+
+.textAppend {
+    width: 90%;
+    margin-left: 40px; 
+}
+
+.textHtml {
+    width: 90%;
+    margin-left: 40px;   
+}
+
+.textAttr {
+    width: 90%;
+    margin-left: 40px;     
+}
